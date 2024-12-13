@@ -1,4 +1,41 @@
 # Noto Color Emoji
+This fork of Noto Color Emoji replaces the old Syrian Flag with the New one following the collapse of the Dictator Bashar al-Assad.
+
+## Installation Instructions
+### Linux
+
+1. Download the font file from releases
+2. Move the font file to `/usr/share/fonts/`
+(If you installed a distro with preinstalled emoji support, remove the existing Noto Color Emoji file and skip to step 6)
+4. If it doesn't already exist, create a file in `/etc/fonts/local.conf`
+5. Add the following text to said file
+```
+<?xml version="1.0"?>
+<!DOCTYPE fontconfig SYSTEM "urn:fontconfig:fonts.dtd">
+<fontconfig>
+    <alias>
+        <family>sans-serif</family>
+        <prefer>
+            <family>Noto Color Emoji</family>
+        </prefer>
+    </alias>
+
+    <alias>
+        <family>serif</family>
+        <prefer>
+            <family>Noto Color Emoji</family>
+        </prefer>
+    </alias>
+
+    <alias>
+        <family>monospace</family>
+        <prefer>
+            <family>Noto Color Emoji</family>
+        </prefer>
+    </alias>
+</fontconfig>
+```
+6. Refresh system fonts using the `fc-cache` command
 
 ### Windows
 1. Download `seguiemj.ttf` from releases
@@ -18,3 +55,9 @@
 4. Add the file you downloaded
 5. Name it whatever you want
 6. Follow the instructions on the app (Varies by phone manufacturer)
+
+### macOS
+While it seems to be possible, it requires a lot of effort and messing with system files, so this is still being worked on.
+
+### iOS
+Unfortunately as of right now it seems impossible to change emoji fonts on iOS and iPadOS devices **even with jailbreak**.
