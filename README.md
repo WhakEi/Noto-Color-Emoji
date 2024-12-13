@@ -1,38 +1,63 @@
-![Noto](https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fab4b4276-9bb0-42a6-a675-510fcb6055df_1940x1088.png)
-# Noto Emoji
-Noto Emoji (Stands for No Tofu) is an open source (Open Font License 1.1) emoji library that provides standard Unicode emoji support and tools for working with them including:
+# Noto Color Emoji
+This fork of Noto Color Emoji replaces the old Syrian Flag with the New one following the collapse of the Dictator Bashar al-Assad.
 
-- A Unicode compliant color emoji [font](https://github.com/googlefonts/noto-emoji/raw/main/fonts/NotoColorEmoji.ttf).
-- A full library of Noto color emoji font files including vector svgs and pngs
-- [Metadata](https://github.com/googlefonts/emoji-metadata) for Emoji Input (including shortcodes, emoji ordering, ascii equivalents)
+## Installation Instructions
+### Linux
 
-## Color Font
+1. Download the font file from releases
+2. Move the font file to `/usr/share/fonts/`
+(If you installed a distro with preinstalled emoji support, remove the existing Noto Color Emoji file and skip to step 6)
+4. If it doesn't already exist, create a file in `/etc/fonts/local.conf`
+5. Add the following text to said file
+```
+<?xml version="1.0"?>
+<!DOCTYPE fontconfig SYSTEM "urn:fontconfig:fonts.dtd">
+<fontconfig>
+    <alias>
+        <family>sans-serif</family>
+        <prefer>
+            <family>Noto Color Emoji</family>
+        </prefer>
+    </alias>
 
-The latest font file is found [here](https://github.com/googlefonts/noto-emoji/raw/main/fonts/NotoColorEmoji.ttf). If you want to download a specific version, please look at the gh-pages branch, where you will find the built assets for both our latest and older versions. 
+    <alias>
+        <family>serif</family>
+        <prefer>
+            <family>Noto Color Emoji</family>
+        </prefer>
+    </alias>
 
-## Monochrome Font
+    <alias>
+        <family>monospace</family>
+        <prefer>
+            <family>Noto Color Emoji</family>
+        </prefer>
+    </alias>
+</fontconfig>
+```
+6. Refresh system fonts using the `fc-cache` command
 
-The black-and-white emoji font is back under active development and is available as a [variable font](https://fonts.google.com/noto/specimen/Noto+Emoji)
+### Windows
+1. Download `seguiemj.ttf` from releases
+2. Press Start+R and type `Shell:fonts`
+3. Scroll down until you find "Segoe UI Emoji"
+4. Right click it, go to Properties
+5. Go to Security tab, click Advanced, change the owner of the file to your Windows username
+6. Go back to Security properties, click Edit this time, find your Users and select Full Control
+7. Right click the font and delete it
+8. Now go to the `seguiemj.ttf` file you downloaded, right click it (click "Show More Options" if you're on W11) and click "Install for all users".
+9. Restart
 
-## Using NotoColorEmoji
+### Android
+1. Download `NotoColorEmoji.ttf` from releases
+2. Download zFont 3 from Play Store
+3. Go to "Downloads" tab, click the + button and choose "Add File"
+4. Add the file you downloaded
+5. Name it whatever you want
+6. Follow the instructions on the app (Varies by phone manufacturer)
 
-NotoColorEmoji uses the CBDT/CBLC color font format, which is supported by Android
-and Chrome/Chromium OS.  Windows supports it starting with Windows 10 Anniversary
-Update in Chrome and Edge.  On macOS, only Chrome supports it, while on Linux it will
-support it with some fontconfig tweaking, see [issue #36](https://github.com/googlei18n/noto-emoji/issues/36). Currently we do not build other color font formats.
+### macOS
+While it seems to be possible, it requires a lot of effort and messing with system files, so this is still being worked on.
 
-## A note about PNGs
-
-The assets provided in the repo are all those used to build the NotoColorEmoji font. With one exception: the flag images in the font are PNG images to which transforms have been applied to standardize the size and generate the wave and border shadow. We do not have SVG versions that reflect these transforms.
-
-## License
-
-Emoji fonts (under the fonts subdirectory) are under the
-[SIL Open Font License, version 1.1](fonts/LICENSE).<br/>
-Tools and most image resources are under the [Apache license, version 2.0](./LICENSE).
-Flag images under third_party/region-flags are in the public domain or
-otherwise exempt from copyright ([more info](third_party/region-flags/LICENSE)).
-
-## Contributing
-
-Please read [CONTRIBUTING](CONTRIBUTING.md) if you are thinking of contributing to this project.
+### iOS
+Unfortunately as of right now it seems impossible to change emoji fonts on iOS and iPadOS devices **even with jailbreak**.
