@@ -11,7 +11,7 @@
 ## تعليمات التثبيت
 ### لينوكس
 
-1. حمل ملف الخط من "Releases"
+1. حمل ملف الخط من "[Releases](https://github.com/WhakEi/Noto-Color-Emoji/releases/tag/Main)"
 2. إنقل الملف إلى `/usr/share/fonts/`
 (إذا قمت بتثبيت إصدار لينوكس يدعم الإيموجي مسبقًا، فقم بإزالة ملف Noto Color Emoji الموجود وانتقل إلى الخطوة السادسة)
 4. قم بإنشاء ملف في `/etc/fonts/local.conf` إذا لم يكن موجودًا من قبل.
@@ -45,7 +45,7 @@
 6. حدث خطوط النظام باستخدام `fc-cache` في موجه الأوامر (Terminal)
 
 ### ويندوز
-1. حمل `seguiemj.ttf` من "Releases"
+1. حمل `seguiemj.ttf` من "[Releases](https://github.com/WhakEi/Noto-Color-Emoji/releases/tag/Main)"
 2. اضغط على Start+R واكتب `Shell:fonts`
 3. إنزل إلى الأسفل حتى تجد "Segoe UI Emoji"
 4. انقر بزر الماوس الأيمن، ثم إنقر إلى "خصائص"
@@ -56,7 +56,7 @@
 9. إعد التشغيل
 
 ### آندرويد
-1. حمل `NotoColorEmoji.ttf` من "Releases"
+1. حمل `NotoColorEmoji.ttf` من "[Releases](https://github.com/WhakEi/Noto-Color-Emoji/releases/tag/Main)"
 2. حمل تطبيق zFont 3 من المتجر
 3. انتقل إلى قس "التنزيلات"، وانقر على زر + واختر "إضافة ملف"
 4. أضف `NotoColorEmoji.ttf` الذي قمت بتنزيله

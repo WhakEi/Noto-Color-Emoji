@@ -7,7 +7,7 @@ This fork of Noto Color Emoji replaces the old Syrian Flag with the New one foll
 ## Installation Instructions
 ### Linux
 
-1. Download the font file from releases
+1. Download the font file from [Releases](https://github.com/WhakEi/Noto-Color-Emoji/releases/tag/Main)
 2. Move the font file to `/usr/share/fonts/`
 (If you installed a distro with preinstalled emoji support, remove the existing Noto Color Emoji file and skip to step 6)
 4. If it doesn't already exist, create a file in `/etc/fonts/local.conf`
@@ -41,7 +41,7 @@ This fork of Noto Color Emoji replaces the old Syrian Flag with the New one foll
 6. Refresh system fonts using the `fc-cache` command
 
 ### Windows
-1. Download `seguiemj.ttf` from releases
+1. Download `seguiemj.ttf` from [Releases](https://github.com/WhakEi/Noto-Color-Emoji/releases/tag/Main)
 2. Press Start+R and type `Shell:fonts`
 3. Scroll down until you find "Segoe UI Emoji"
 4. Right click it, go to Properties
@@ -52,7 +52,7 @@ This fork of Noto Color Emoji replaces the old Syrian Flag with the New one foll
 9. Restart
 
 ### Android
-1. Download `NotoColorEmoji.ttf` from releases
+1. Download `NotoColorEmoji.ttf` from [Releases](https://github.com/WhakEi/Noto-Color-Emoji/releases/tag/Main)
 2. Download zFont 3 from Play Store
 3. Go to "Downloads" tab, click the + button and choose "Add File"
 4. Add the file you downloaded
