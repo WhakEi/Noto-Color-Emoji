@@ -1,5 +1,6 @@
 # Noto Color Emoji
-للعربية (إضغط هنا)[README-AR.md]
+للعربية (إضغط هنا)[https://github.com/WhakEi/Noto-Color-Emoji/blob/master/README-AR.md]
+
 This fork of Noto Color Emoji replaces the old Syrian Flag with the New one following the collapse of the Dictator Bashar al-Assad.
 
 ## Installation Instructions
