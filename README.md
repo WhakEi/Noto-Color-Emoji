@@ -1,6 +1,7 @@
 # Noto Color Emoji
 للعربية [إضغط هنا](https://github.com/WhakEi/Noto-Color-Emoji/blob/master/README-AR.md)
 
+![Example Image](https://github.com/WhakEi/Noto-Color-Emoji/blob/main/images/noto.png)
 This fork of Noto Color Emoji replaces the old Syrian Flag with the New one following the collapse of the Dictator Bashar al-Assad.
 
 ## Installation Instructions
@@ -63,3 +64,16 @@ While it seems to be possible, it requires a lot of effort and messing with syst
 
 ### iOS
 Unfortunately as of right now it seems impossible to change emoji fonts on iOS and iPadOS devices **even with jailbreak**.
+
+## FAQ
+**Q:** The Syrian Flag emoji still shows up as the old one in WhatsApp/Firefox
+**A:** Firefox on Windows as well as WhatsApp use their own Emoji sets seperate from the system, there's a workaround currently being developed for that.
+
+**Q:** When I send my friend the Syrian flag emoji, the old one shows up on their side
+**A:** Installing this will NOT change how the Syrian flag looks like for everyone, the change only applies on your side, your friend has to also install this emoji set.
+
+**Q:** All my emojis don't look the same anymore on Windows
+**A:** By default Windows does not use Noto Emoji, their default Emoji packs do not support any country's flag, that's why if you want support for country flags on Windows you have to use a different emoji set.
+
+**Q:** All my emojis don't look the same anymore on Android
+**A:** Most mobile manufacturers use Noto Emoji, but some manufacturers like Samsung and Huawei have developed their own emoji sets.
